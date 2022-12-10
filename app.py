@@ -1,15 +1,16 @@
+import openai
+import os
+
 from jupyter_dash import JupyterDash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from dash.dependencies import Input, Output, State
-import pandas as pd
-import plotly.express as px
 
 #El bot con OpenAi
 
 conversation = ""
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 def run_preset_10(conversation):
@@ -34,7 +35,6 @@ def run_preset_10(conversation):
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = JupyterDash(__name__, external_stylesheets=external_stylesheets)
-server = app.server
 
 app.layout = html.Div([
     html.H5("GPT-3 ChatBot API para O-Part Gaming"),
