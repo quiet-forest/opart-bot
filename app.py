@@ -1,5 +1,6 @@
 import openai
 import os
+import plotly.express as px
 
 from jupyter_dash import JupyterDash
 from dash import dcc
