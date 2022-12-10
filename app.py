@@ -35,6 +35,7 @@ def run_preset_10(conversation):
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = JupyterDash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 app.layout = html.Div([
     html.H5("GPT-3 ChatBot API para O-Part Gaming"),
