@@ -1,3 +1,4 @@
 dash==2.0.0
 jupyter-dash
 openai
+gunicorn
