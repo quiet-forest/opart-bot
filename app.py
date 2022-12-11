@@ -11,7 +11,7 @@ from dash.dependencies import Input, Output, State
 
 conversation = ""
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 def run_preset_10(conversation):
